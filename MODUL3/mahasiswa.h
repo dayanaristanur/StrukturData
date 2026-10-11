@@ -1,0 +1,21 @@
+
+#ifndef MAHASISWA_H
+#define MAHASISWA_H
+
+#include <string>
+using namespace std;
+
+struct Mahasiswa {
+    string nama;
+    string nim;
+    float uts;
+    float uas;
+    float tugas;
+    float nilaiAkhir;
+};
+
+float hitungNilaiAkhir(Mahasiswa m);
+void inputMahasiswa(Mahasiswa &m);
+void tampilMahasiswa(Mahasiswa m);
+
+#endif
